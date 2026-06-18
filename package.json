@@ -1,0 +1,1 @@
+{"scripts":{"dev":"npx serve .","start":"npx serve ."},"dependencies":{},"devDependencies":{"serve":"latest"}}
