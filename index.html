@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connection 03 | Generacion de activos digitales | Doc ROI</title>
+  <meta name="description" content="Pildora Doc ROI Connection 03 para generar activos digitales a partir de buyer persona, prompts y conocimiento estructurado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#0b0f19;--blue:#003b5c;--soft:#f6f7f9;--line:#e5e7eb;--muted:#5b6472;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--soft);color:var(--black);font-family:Inter,Helvetica,Arial,sans-serif;line-height:1.5}img{max-width:100%}a{color:inherit}.docroi-section{padding:76px 24px}.docroi-wrap{width:min(1120px,100%);margin:0 auto}.docroi-btn{display:inline-flex;align-items:center;justify-content:center;width:100%;min-height:52px;padding:14px 18px;border-radius:999px;border:1px solid transparent;text-align:center;text-decoration:none;font-size:14px;font-weight:900;line-height:1.15;transition:.2s ease;cursor:pointer}.docroi-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.15)}.docroi-btn-dark{background:#0b0f19;color:#fff;border-color:#0b0f19}.docroi-btn-blue{background:#003b5c;color:#fff;border-color:#003b5c}.docroi-btn-white{background:#fff;color:#0b0f19;border-color:#e5e7eb}.docroi-hero{background:#0b0f19;color:#fff;padding:34px 20px 38px;border-bottom:6px solid #003b5c}.docroi-hero-inner{width:min(1120px,100%);margin:0 auto;display:grid;grid-template-columns:1.08fr .92fr;gap:28px;align-items:center}.docroi-logo-frame{display:inline-flex;align-items:center;justify-content:center;background:#000;border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:14px 18px;margin-bottom:22px;box-shadow:0 18px 44px rgba(0,0,0,.22)}.docroi-logo-frame img{height:66px;width:auto;display:block}.docroi-pill{display:inline-block;margin-bottom:22px;padding:10px 16px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(255,255,255,.1);color:#d8ecf8;font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.docroi-hero h1{max-width:780px;margin:0 0 20px;color:#fff;font-size:clamp(32px,7vw,58px);line-height:1.04;font-weight:900}.docroi-hero p{max-width:760px;margin:0;color:#eaf6fb;font-size:18px;line-height:1.75}.docroi-hero-card{padding:30px;border:1px solid rgba(255,255,255,.4);border-radius:28px;background:#fff;color:#0b0f19;box-shadow:0 24px 60px rgba(0,0,0,.24)}.docroi-chip{display:inline-block;margin-bottom:16px;padding:8px 14px;border:1px solid #d8ecf8;border-radius:999px;background:#eaf6fb;color:#003b5c;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.docroi-hero-card h2,.docroi-section h2{font-size:clamp(30px,6vw,44px);line-height:1.1;margin:0 0 18px;font-weight:900}.docroi-hero-card p,.docroi-section p{color:#5b6472;line-height:1.8}.docroi-actions{display:grid;gap:10px}.docroi-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.docroi-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.docroi-card{padding:26px;border:1px solid #e5e7eb;border-radius:24px;background:#fff;box-shadow:0 12px 30px rgba(11,15,25,.05)}.docroi-card h3{margin:0 0 10px;font-size:24px;font-weight:900}.docroi-card p{margin:0 0 18px}.docroi-card-soft{padding:22px;border:1px solid #d8e1ea;border-radius:22px;background:#f1f4f8;color:#5b6472}.docroi-prompt-frame{padding:14px;border:1px solid rgba(11,15,25,.88);border-radius:30px;background:#0b0f19;box-shadow:0 22px 58px rgba(11,15,25,.18)}.docroi-prompt-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px 10px 18px;color:#fff}.docroi-prompt-top strong{font-size:14px;text-transform:uppercase;letter-spacing:.06em}.docroi-prompt-top span{color:#d8ecf8;font-size:13px;font-weight:700}.docroi-prompt-box{width:100%;min-height:520px;resize:vertical;border:1px solid #cbd5e1;border-radius:22px;padding:20px;background:#fbfdff;color:#111827;font-family:Consolas,Monaco,'Courier New',monospace;font-size:13px;line-height:1.55}.docroi-prompt-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}.docroi-status{min-height:24px;margin-top:12px;color:#d8ecf8;font-size:14px;font-weight:900}.docroi-kai{position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(11,15,25,.98),rgba(11,15,25,.94) 54%,rgba(0,59,92,.82)),url('https://docroi.marketing/wp-content/uploads/2026/05/Imagen1.png') center/cover no-repeat;color:#fff}.docroi-kai .docroi-grid-2{align-items:center}.docroi-kai h2{color:#fff;font-size:clamp(36px,8vw,58px);line-height:1.04}.docroi-kai p{color:#edf2f7}.docroi-kai-card{padding:30px;border-radius:28px;background:#fff;color:#0b0f19;box-shadow:0 24px 60px rgba(0,0,0,.26)}.docroi-kai-card p,.docroi-kai-card li{color:#5b6472}.docroi-kai-list{margin:0 0 24px;padding:18px;border:1px solid #e1e7ef;border-radius:20px;background:#f1f4f8}.docroi-kai-list ul{margin:0;padding-left:20px}.docroi-footer{background:#000;padding:68px 24px 54px;text-align:center;color:#fff}.docroi-footer-inner{max-width:920px;margin:0 auto}.docroi-footer img{height:72px;width:auto;display:block}.docroi-footer-logo{display:inline-flex;margin-bottom:24px;text-decoration:none}.docroi-footer-consult{display:inline-flex;margin-bottom:28px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.42);color:#fff;text-decoration:none;font-size:15px;font-weight:900}.docroi-footer-links{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;margin-bottom:24px;color:#d1d5db;font-size:14px}.docroi-footer-links a{color:#d1d5db;text-decoration:none}.docroi-footer-copy{color:#c0c7d1;font-size:15px;line-height:1.9}.docroi-footer-copy a{color:#f3f4f6;text-decoration:none}@media(max-width:820px){.docroi-hero-inner,.docroi-grid-2,.docroi-grid-3{grid-template-columns:1fr}.docroi-prompt-actions{grid-template-columns:1fr}.docroi-section{padding:56px 20px}.docroi-logo-frame img{height:54px}.docroi-hero-card,.docroi-card{padding:22px}.docroi-prompt-box{min-height:420px;font-size:12px}}
+  </style>
+</head>
+<body>
+  <main class="docroi-prompt-pill">
+    <section class="docroi-hero">
+      <div class="docroi-hero-inner">
+        <div>
+          <a href="https://docroi.marketing/" target="_blank" rel="noopener noreferrer" class="docroi-logo-frame"><img src="https://docroi.marketing/wp-content/uploads/2026/05/Logo_Negro_DoC_ROI.jpg" alt="Doc ROI"></a>
+          <span class="docroi-pill">Connection 03 · Generacion de activos digitales</span>
+          <h1>Connection 03 · Generacion de activos digitales</h1>
+          <p>Convierte una idea formativa o profesional en un activo digital con estructura, proposito y valor reutilizable. Aprende a ordenar contenido, disenar entregables, documentar conocimiento y transformar materiales dispersos en recursos utiles para aula, negocio, marca personal y monetizacion del dato.</p>
+        </div>
+        <div class="docroi-hero-card">
+          <span class="docroi-chip">Uso en clase</span>
+          <h2>Del conocimiento disperso al activo digital descargable</h2>
+          <p>Esta pildora entrega un prompt maestro para transformar contenido disperso en una pagina web funcional: una primera version de activo digital que puede verse, editarse, descargarse y reutilizarse.</p>
+          <div class="docroi-actions">
+            <a href="#prompt-docroi" class="docroi-btn docroi-btn-dark">Ir al prompt</a>
+            <a href="https://buyer-persona-three.vercel.app/" target="_blank" rel="noopener noreferrer" class="docroi-btn docroi-btn-blue">Crear ficha buyer persona</a>
+            <a href="https://docroi.marketing/wp-content/uploads/2026/06/1.Guia_4th-connection.DocROI_generacion-de-activos-digitales.pdf" target="_blank" rel="noopener noreferrer" class="docroi-btn docroi-btn-white">Descargar guia de activos digitales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="docroi-section" style="background:#fff;border-bottom:1px solid #e5e7eb">
+      <div class="docroi-wrap">
+        <div style="max-width:840px;margin:0 auto 34px;text-align:center">
+          <span class="docroi-chip">Instrucciones</span>
+          <h2>Un proceso LEGO para crear activos digitales</h2>
+          <p>Primero se ordena la idea. Despues se orienta al buyer persona. Por ultimo, el prompt convierte esa estructura en una pagina web con visor, codigo editable y valor reutilizable.</p>
+        </div>
+        <div class="docroi-grid-3">
+          <article class="docroi-card"><span class="docroi-chip">1</span><h3>Ordenar la idea</h3><p>Define que conocimiento, practica, servicio o propuesta quieres convertir en recurso util.</p></article>
+          <article class="docroi-card"><span class="docroi-chip">2</span><h3>Crear la ficha</h3><p>Genera el buyer persona para que el activo responda a un perfil concreto y no a una audiencia abstracta.</p></article>
+          <article class="docroi-card"><span class="docroi-chip">3</span><h3>Generar el activo</h3><p>Copia el prompt, adjunta ficha y logo, y construye una primera pagina con visor y codigo editable.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="prompt-docroi" class="docroi-section">
+      <div class="docroi-wrap docroi-grid-2">
+        <div>
+          <span class="docroi-chip">Prompt definitivo</span>
+          <h2>La pieza que convierte la idea en pagina web</h2>
+          <p>Este prompt obliga a que la web nazca de una ficha de buyer persona. Si no hay ficha, la IA debe detenerse y pedirla. Asi el resultado deja de ser un diseno generico y se convierte en un activo digital con foco, estructura y utilidad.</p>
+          <div class="docroi-card-soft"><strong style="display:block;color:#0b0f19;margin-bottom:8px">Regla Doc ROI</strong><p style="margin:0">Un activo digital no es solo un archivo bonito. Es conocimiento ordenado, orientado a un usuario, empaquetado para ser usado, compartido, aprendido y mejorado.</p></div>
+        </div>
+        <div class="docroi-prompt-frame">
+          <div class="docroi-prompt-top"><strong>Prompt listo para usar</strong><span>ChatGPT · Gemini · visor + codigo</span></div>
+          <textarea id="docroiPromptArea" class="docroi-prompt-box" spellcheck="false">Actua como disenador web senior, desarrollador front-end, experto en marketing digital y profesor de IA aplicada.
+
+Quiero que crees una pagina web sencilla, profesional y didactica para ensenar a alumnos como se construye una landing page orientada a buyer persona.
+
+La pagina no debe hacerse de forma generica. Debe construirse obligatoriamente a partir de una ficha de buyer persona generada con Doc ROI.
+
+FASE 0 · COMPROBACION OBLIGATORIA
+
+Antes de crear la web, comprueba si he adjuntado una ficha de buyer persona en PDF, imagen, documento o texto.
+
+SI NO HAY FICHA ADJUNTA
+
+No crees la pagina web. Responde unicamente:
+"Para crear una pagina web orientada correctamente al buyer persona necesito que adjuntes la ficha de buyer persona generada con Doc ROI. Puedes crearla aqui: https://buyer-persona-three.vercel.app/"
+
+SI HAY FICHA ADJUNTA
+
+Analiza la ficha con detalle y extrae la informacion necesaria para crear una landing page orientada al buyer persona. No inventes datos importantes. Si falta algun dato, usa [PENDIENTE] y continua.
+
+La pagina debe explicar rapidamente que se ofrece, que problema resuelve, que beneficio aporta, por que interesa, que debe hacer el usuario y como puede contactar.
+
+ESTRUCTURA OBLIGATORIA
+
+1. Cabecera con logo, nombre, menu hamburguesa y enlaces internos.
+2. Hero con propuesta de valor y formulario con RGPD.
+3. Soluciones conectadas con pains, necesidades, objeciones y oportunidades del buyer persona.
+4. Blog con contenidos derivados de pains, gains, keywords, preguntas y nivel de madurez.
+5. Claim final de contacto con boton al formulario.
+6. Footer con logo, contacto, ubicacion y enlaces internos.
+
+REQUISITOS
+
+- HTML, CSS y JavaScript en un unico archivo index.html.
+- Sin frameworks externos.
+- Diseno limpio, responsive y profesional.
+- Comentarios didacticos en HTML, CSS y JavaScript.
+- Validacion basica del formulario.
+- Simulacion de envio con mensaje: "Gracias. Hemos recibido tu solicitud de informacion."
+
+CRITERIO DOC ROI
+
+No hagas una web bonita pero vacia. La pagina debe demostrar que nace de comprender al buyer persona.
+
+Salida esperada: vista previa si el entorno lo permite, codigo completo index.html y nota breve de que partes puede modificar el alumno.</textarea>
+          <div class="docroi-prompt-actions">
+            <button type="button" class="docroi-btn docroi-btn-blue" onclick="docroiCopyPrompt()">Copiar prompt</button>
+            <button type="button" class="docroi-btn docroi-btn-white" onclick="docroiSelectPrompt()">Seleccionar todo</button>
+            <button type="button" class="docroi-btn docroi-btn-white" onclick="docroiDownloadPrompt()">Descargar prompt .txt</button>
+            <a href="https://docroi.marketing/wp-content/uploads/2026/06/1.Guia_4th-connection.DocROI_generacion-de-activos-digitales.pdf" target="_blank" rel="noopener noreferrer" class="docroi-btn docroi-btn-white">Descargar guia PDF</a>
+          </div>
+          <div id="docroiPromptStatus" class="docroi-status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="docroi-section" style="background:#fff;border-top:1px solid #e5e7eb">
+      <div class="docroi-wrap">
+        <div style="max-width:840px;margin:0 auto 34px;text-align:center"><span class="docroi-chip">Recursos de la connection</span><h2>Todo lo necesario para entregar la practica</h2></div>
+        <div class="docroi-grid-3">
+          <article class="docroi-card"><h3>Ficha buyer persona</h3><p>Crea la ficha que alimentara la landing page.</p><a href="https://buyer-persona-three.vercel.app/" target="_blank" rel="noopener noreferrer" class="docroi-btn docroi-btn-blue">Crear ficha</a></article>
+          <article class="docroi-card"><h3>Prompt de la pildora</h3><p>Texto maestro para generar la pagina web y convertir la idea en entregable operativo.</p><button type="button" class="docroi-btn docroi-btn-dark" onclick="docroiDownloadPrompt()">Descargar prompt .txt</button></article>
+          <article class="docroi-card"><h3>Guia de activos digitales</h3><p>Documento de apoyo para trabajar estructura, proposito, documentacion y reutilizacion.</p><a href="https://docroi.marketing/wp-content/uploads/2026/06/1.Guia_4th-connection.DocROI_generacion-de-activos-digitales.pdf" target="_blank" rel="noopener noreferrer" class="docroi-btn docroi-btn-dark">Abrir / descargar PDF</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kai-roi" class="docroi-section docroi-kai">
+      <div class="docroi-wrap docroi-grid-2">
+        <div>
+          <span class="docroi-pill">KAI·ROI Equation · Customer Equity</span>
+          <h2>Esta conexion es una puerta de entrada a la Ecuacion KAI·ROI</h2>
+          <p>La primera conexion no termina en la automatizacion. Termina cuando entiendes como un dato operativo puede convertirse en informacion, inteligencia, indicadores, Customer Equity y decisiones defendibles con criterio economico.</p>
+          <p>El documento de la Ecuacion KAI·ROI ofrece una introduccion ejecutiva para conectar ROI, monetizacion del dato, Customer Equity y toma de decisiones estrategicas dentro del ecosistema Doc ROI.</p>
+        </div>
+        <div class="docroi-kai-card">
+          <span class="docroi-chip">Descarga ejecutiva</span>
+          <h3>The KAI·ROI Equation Book</h3>
+          <p>Una guia breve y clara para entender como los datos, el ROI, el Customer Equity y las decisiones estrategicas pueden conectarse a traves del marco KAI·ROI.</p>
+          <div class="docroi-kai-list"><strong>Dentro del documento:</strong><ul><li>Que es la Ecuacion KAI·ROI</li><li>Por que importa el Customer Equity</li><li>Como el ROI se convierte en sistema de decision</li><li>Por que el dato debe monetizarse con proposito</li></ul></div>
+          <a href="https://docroi.marketing/kai-equation/" target="_blank" rel="noopener noreferrer" class="docroi-btn docroi-btn-dark">Accede a la Ecuacion KAI·ROI</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="docroi-footer">
+      <div class="docroi-footer-inner">
+        <a href="https://la-consulta-del-doc-roi.vercel.app/#kai" target="_blank" rel="noopener noreferrer" class="docroi-footer-logo"><img src="https://docroi.marketing/wp-content/uploads/2026/05/Logo_Negro_DoC_ROI.jpg" alt="Doc ROI"></a>
+        <div><a href="https://doc-roi-executive.vercel.app/" target="_blank" rel="noopener noreferrer" class="docroi-footer-consult">Consulta con Doc ROI</a></div>
+        <nav class="docroi-footer-links"><a href="https://docroi.marketing/aviso-legal/" target="_blank" rel="noopener noreferrer">Politica de privacidad</a><span>|</span><a href="https://docroi.marketing/aviso-legal/" target="_blank" rel="noopener noreferrer">Aviso legal</a><span>|</span><a href="https://docroi.marketing/aviso-legal/" target="_blank" rel="noopener noreferrer">Propiedad intelectual</a></nav>
+        <div class="docroi-footer-copy"><span>La propiedad intelectual del ecosistema Doc ROI pertenece al</span><br><a href="https://docroi.marketing/ph-d-jorge-lucio/" target="_blank" rel="noopener noreferrer"><strong>Ph. D. Jorge Lucio Sanchez Galan.</strong></a></div>
+      </div>
+    </footer>
+  </main>
+  <script>
+    function docroiSetStatus(message){var status=document.getElementById('docroiPromptStatus');if(status)status.textContent=message;}
+    function docroiSelectPrompt(){var area=document.getElementById('docroiPromptArea');if(!area)return;area.focus();area.select();docroiSetStatus('Prompt seleccionado. Ahora copia con Ctrl+C o Cmd+C.');}
+    async function docroiCopyPrompt(){var area=document.getElementById('docroiPromptArea');if(!area)return;try{await navigator.clipboard.writeText(area.value);docroiSetStatus('Prompt copiado. Ya puedes pegarlo en ChatGPT o Gemini.');}catch(err){area.focus();area.select();docroiSetStatus('El navegador no permitio copiar automaticamente. El prompt esta seleccionado: pulsa Ctrl+C o Cmd+C.');}}
+    function docroiDownloadPrompt(){var area=document.getElementById('docroiPromptArea');if(!area)return;var blob=new Blob([area.value],{type:'text/plain;charset=utf-8'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='connection_03_prompt_activo_digital_landing_buyerpersona.txt';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);docroiSetStatus('Prompt .txt generado para descarga.');}
+  </script>
+</body>
+</html>
